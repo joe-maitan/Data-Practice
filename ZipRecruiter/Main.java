@@ -67,12 +67,11 @@ public class Main {
         for (int e : housesToDestroy) {
             // count how many sections of houses there are
             sections.add(numberOfSections(myHood));
-            // find the index of the element in the neighborhood
             
-            // destroy the house
+            // find the index of the element in the neighborhood
             int index = indiceOfHouse(housesToDestroy, e);
             if (myHood[index] == true) {
-                myHood[index] = false;
+                myHood[index] = false; // destroy the house
             }
 
             toString(myHood);
